@@ -1,0 +1,30 @@
+@import url(layout.css);
+/* lijnnamen */
+div#wrapper{
+    display:grid;
+    grid-template-columns: [k1s]1fr[k1e k2s]2fr[k2e];
+    grid-template-rows: [r1s]auto[r1e r2s]auto[r2e r3s]auto[r3e r4s]auto[r4e];
+}
+/* header*/
+header{
+    grid-column: k1s/span 2;
+    grid-row: r1s;
+}
+aside{
+    grid-column: k1s/span 1;
+    grid-row:r2s/span 2;
+}
+section{
+    grid-column: k2s/span 1;
+}
+section:first-of-type{    
+    grid-row:r2s/r2e;
+}
+section:last-of-type{
+    grid-row:r3s/r3e;
+}
+footer{
+    grid-column: k1s/span 2;
+    grid-row: r4s;
+}
+

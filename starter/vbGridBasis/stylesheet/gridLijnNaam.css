@@ -1,0 +1,25 @@
+@import url(layout.css);
+/* lijnnamen */
+div#wrapper{
+    display:grid;
+    
+}
+/* header*/
+header{
+    
+}
+aside{
+    
+}
+section{
+    
+}
+section:first-of-type{    
+
+}  
+section:last-of-type{
+    
+}
+footer{
+    
+}

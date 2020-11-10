@@ -1,0 +1,29 @@
+@import url(layout.css);
+/* lijnnamen */
+div#wrapper{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "h h"
+    "a s1"
+    ". s2"
+    "f f"
+    ;
+}
+header{
+    grid-area: h;
+}
+aside{
+    grid-area: a;
+}
+section:first-of-type{    
+    grid-area: s1;
+}
+section:last-of-type{
+    grid-area: s2;
+}
+footer{
+    grid-area: f;
+}
+ 

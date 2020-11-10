@@ -1,0 +1,25 @@
+@import url(layout.css);
+/* lijnnamen */
+div#wrapper{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4,auto);
+    
+}
+header{
+    
+}
+aside{
+    
+}
+section:first-of-type{    
+    
+}
+section:last-of-type{
+    
+}
+footer{
+    
+}
+
+ 

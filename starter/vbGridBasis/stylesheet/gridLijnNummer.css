@@ -1,0 +1,22 @@
+@import url(main.css);
+/* items plaatsen - lijnnummers */
+main{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+/* item2 over 3 eerste cellen 
+
+*/
+/* item2 over 3 eerste cellen - verkort 
+
+*/
+/* item2 over 3 eerste cellen en over twee eerste rijen 
+
+*/ 
+/* item2 over 3 eerste cellen en over twee eerste rijen - verkort 
+
+*/ 
+/* item2 over 3 eerste cellen en over twee eerste rijen - nog korter 
+
+*/ 
