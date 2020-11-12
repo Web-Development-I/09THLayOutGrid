@@ -89,8 +89,7 @@ a:hover {
 */
 nav li,
 footer li {
-  display: inline-block;
-  margin: 0 3px;
+  display: inline;
 }
 nav li:last-child,
 footer li:last-child {

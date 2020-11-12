@@ -1,6 +1,6 @@
 @import url(layout.css);
 /* lijnnamen */
-div#wrapper{
+#wrapper{
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4,auto);

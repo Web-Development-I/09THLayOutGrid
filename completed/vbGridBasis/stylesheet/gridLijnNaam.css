@@ -1,30 +1,27 @@
 @import url(layout.css);
 /* lijnnamen */
-div#wrapper{
-    display:grid;
-    grid-template-columns: [k1s]1fr[k1e k2s]2fr[k2e];
-    grid-template-rows: [r1s]auto[r1e r2s]auto[r2e r3s]auto[r3e r4s]auto[r4e];
+#wrapper {
+  display: grid;
+  grid-template-columns: [left-edge]1fr[aside-end section-start] 2fr[right-edge];
+  grid-template-rows: [header-start]auto [content-start]auto[content-middle]auto[content-end footer-start]auto[footer-end];
 }
-/* header*/
-header{
-    grid-column: k1s/span 2;
-    grid-row: r1s;
+header {
+  grid-column: left-edge/right-edge;
+  grid-row: header-start;
 }
-aside{
-    grid-column: k1s/span 1;
-    grid-row:r2s/span 2;
+aside {
+  grid-column: left-edge/aside-end;
+  grid-row: content-start/content-end;
 }
-section{
-    grid-column: k2s/span 1;
+section:first-of-type {
+  grid-column: section-start/right-edge;
+  grid-row: content-start;
 }
-section:first-of-type{    
-    grid-row:r2s/r2e;
+section:last-of-type {
+  grid-column: section-start/right-edge;
+  grid-row: content-middle;
 }
-section:last-of-type{
-    grid-row:r3s/r3e;
+footer {
+  grid-column: left-edge/right-edge;
+  grid-row: footer-start;
 }
-footer{
-    grid-column: k1s/span 2;
-    grid-row: r4s;
-}
-

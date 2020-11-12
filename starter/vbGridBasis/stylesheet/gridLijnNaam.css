@@ -1,25 +1,27 @@
 @import url(layout.css);
 /* lijnnamen */
-div#wrapper{
-    display:grid;
-    
+#wrapper {
+  display: grid;
+  grid-template-columns: [left-edge]1fr[aside-end section-start] 2fr[right-edge];
+  grid-template-rows: [header-start]auto [content-start]auto[content-middle]auto[content-end footer-start]auto[footer-end];
 }
-/* header*/
-header{
-    
+header {
+  grid-column: left-edge/right-edge;
+  grid-row: header-start;
 }
-aside{
-    
+aside {
+  grid-column: left-edge/aside-end;
+  grid-row: content-start/content-end;
 }
-section{
-    
+section:first-of-type {
+  grid-column: section-start/right-edge;
+  grid-row: content-start;
 }
-section:first-of-type{    
-
-}  
-section:last-of-type{
-    
+section:last-of-type {
+  grid-column: section-start/right-edge;
+  grid-row: content-middle;
 }
-footer{
-    
+footer {
+  grid-column: left-edge/right-edge;
+  grid-row: footer-start;
 }

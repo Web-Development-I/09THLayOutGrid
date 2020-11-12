@@ -1,29 +1,29 @@
 @import url(layout.css);
 /* lijnnamen */
-div#wrapper{
+#wrapper{
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4,auto);
     grid-template-areas: 
-    "h h"
-    "a s1"
-    ". s2"
-    "f f"
+    "header header"
+    "aside section1"
+    "aside section2"
+    "footer footer"
     ;
 }
 header{
-    grid-area: h;
+    grid-area: header;
 }
 aside{
-    grid-area: a;
+    grid-area: aside;
 }
 section:first-of-type{    
-    grid-area: s1;
+    grid-area: section1;
 }
 section:last-of-type{
-    grid-area: s2;
+    grid-area: section2;
 }
 footer{
-    grid-area: f;
+    grid-area: footer;
 }
  

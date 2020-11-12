@@ -1,0 +1,31 @@
+header,
+section,
+aside,
+footer{
+  border-radius: 6px;
+  color: #eee;
+  font-family: "Lucida Console", Terminal, "Courier New", Courier;
+  line-height: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  margin:.5rem;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  background-color:grey;
+}
+
+section {
+  background-color:green;  
+}
+
+aside {
+  background-color: red;  
+}
+
+footer {  
+  margin-bottom:0px;
+}
+
